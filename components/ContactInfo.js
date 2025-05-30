@@ -4,7 +4,7 @@ function ContactInfo() {
       { icon: 'fas fa-phone', text: '(781) 921-7869', href: 'tel:+17819217869' },
       { icon: 'fas fa-envelope', text: 'phat.pan@gmail.com', href: 'mailto:phat.pan@gmail.com' },
       { icon: 'fab fa-linkedin', text: 'LinkedIn Profile', href: 'https://linkedin.com/in/phatcharaphan-a-570967a3/' },
-      { icon: 'fas fa-map-marker-alt', text: '11 Leland St, Malden, MA 02148, United States', href: null }
+      { icon: 'fas fa-map-marker-alt', text: '2C, 535 w 135th st, New York, NY 10031, United States 10310', href: null }
     ];
 
     return (
