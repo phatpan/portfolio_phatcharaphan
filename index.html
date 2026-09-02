@@ -300,6 +300,14 @@
   .figure figcaption b { color: var(--ink-2); font-weight: 600; }
   .figure video { width: 100%; display: block; }
 
+  /* two figures side by side */
+  .fig-pair {
+    display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px;
+    margin: 26px 0 0;
+  }
+  @media (min-width: 760px) { .fig-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; } }
+  .fig-pair > * { min-width: 0; }
+
   /* the one big image that carries a section */
   .lead-figure { margin: 26px 0 0; }
   .lead-figure .frame { background: #fff; }
@@ -421,22 +429,6 @@
   }
   .fcard a { color: inherit; text-decoration: none; }
   .fcard a:hover h3 { color: var(--green); }
-
-  /* current roles */
-  .roles-now { border-top: 1px solid var(--ink); }
-  .rnow {
-    display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px 30px;
-    padding: 20px 0; border-bottom: 1px solid var(--rule);
-  }
-  @media (min-width: 760px) { .rnow { grid-template-columns: 190px minmax(0, 1fr); } }
-  .rnow > * { min-width: 0; }
-  .rnow .when {
-    font-family: "DM Mono", ui-monospace, monospace;
-    font-size: 12.5px; color: var(--muted); padding-top: 5px;
-  }
-  .rnow h3 { font-size: 19px; font-weight: 600; letter-spacing: -.012em; }
-  .rnow .role-title { font-size: 16px; color: var(--muted); margin: 3px 0 8px; }
-  .rnow p { margin: 0; color: var(--ink-2); font-size: 18px; }
 
   .award {
     display: flex; gap: 14px; align-items: flex-start;
@@ -830,14 +822,30 @@
         </ul>
       </div>
       <div class="block" data-reveal>
-        <h3>TPH Global — payroll platform</h3>
+        <h3>TPH Global — Digital Paper Flow</h3>
         <div class="kicker">Oct 2023 – Apr 2024 · Melbourne · React · TypeScript · Node · AWS</div>
         <ul class="dash">
-          <li>Led development of a payroll platform in React/TypeScript and Node, with REST integrations,
+          <li><b>Digital Paper Flow</b> — purchase-order and invoice approval for finance teams. Every document moves
+            through draft → pending → approved with its own approval chain, attachments and comment thread, so the
+            audit trail is the workflow rather than something reconstructed afterwards.</li>
+          <li>Led development of a <b>payroll platform</b> in React/TypeScript and Node, with REST integrations,
             real-time synchronisation, and unit and integration tests.</li>
           <li>Ran the cloud workloads on <b>AWS</b> — EC2, RDS PostgreSQL, CodePipeline and CloudWatch — which made
             releases repeatable and gave the team actual production visibility.</li>
         </ul>
+        <div class="stores" style="margin-top:16px">
+          <a class="site" href="https://digitalpaperflow.com">digitalpaperflow.com&nbsp;↗</a>
+        </div>
+        <div class="fig-pair">
+          <figure class="figure" data-reveal>
+            <div class="frame"><img src="assets/dpf_orders.jpg" alt="Digital Paper Flow purchase orders: a document list on the left with draft, pending, declined and approved tabs, a purchase order rendered in the centre, and attachments, approvals and comments on the right." loading="lazy" decoding="async"></div>
+            <figcaption><b>Purchase orders</b> — the document, its approval chain and its attachments on one screen.</figcaption>
+          </figure>
+          <figure class="figure" data-reveal style="--d:.09s">
+            <div class="frame"><img src="assets/dpf_dashboard.jpg" alt="Digital Paper Flow dashboard: counts of draft, pending, declined and approved orders and invoices, with transaction history and a recent activity feed." loading="lazy" decoding="async"></div>
+            <figcaption><b>Dashboard</b> — what is waiting on whom, across orders and invoices.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 

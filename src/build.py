@@ -32,7 +32,9 @@ VIDEOS = {
 add("telepharmacy", 1280, 74)
 add("ttbtouch",     1120, 60)
 add("krungsrigo",   1180, 60)
-add("fundplus",     1180, 60)   # hero — Techsauce launch image, pharmacist console
+add("fundplus",     1180, 60)
+add("dpf_orders",   1100, 66)
+add("dpf_dashboard",1100, 66)   # hero — Techsauce launch image, pharmacist console
 add("nicha_poster",  980, 62)   # first frame, shown if video cannot play
 add("nicha_line_poster", 560, 62)
 add("juztbooking",   980, 60)
