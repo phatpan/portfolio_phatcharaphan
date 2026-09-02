@@ -390,6 +390,12 @@
   .stores { display: flex; flex-wrap: wrap; gap: 6px 18px; }
   .product p { margin: 12px 0 0; font-size: 18px; color: var(--ink-2); }
   .product .figure { margin-bottom: 14px; }
+  @media (min-width: 780px) {
+    .product.span-2 { grid-column: 1 / -1; }
+    .more-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 34px; }
+    .more-list > * { min-width: 0; }
+  }
+  .more-list p { margin: 14px 0 0; }
 
   /* small archive strip */
   .strip { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -878,9 +884,10 @@
             own non-technical team.</p>
         </article>
 
-        <article class="product" data-reveal>
+        <article class="product span-2" data-reveal>
           <h3 style="margin-top:4px">More shipped products</h3>
-          <p style="margin-top:12px"><b>MinChap</b> — short-drama streaming for the Thai market, on both stores.
+          <div class="more-list">
+          <p><b>MinChap</b> — short-drama streaming for the Thai market, on both stores.
             Flutter client, Node API on Knex, operator back-office; coins, in-app purchases and episode unlocking.
             <a class="site" href="https://play.google.com/store/apps/details?id=com.minchap.love.minchap_mobile">Google Play&nbsp;↗</a>
             <a class="site" href="https://apps.apple.com/app/id6736961012">App Store&nbsp;↗</a></p>
@@ -899,6 +906,7 @@
             register, request, shipment and tracking apps.</p>
           <p><b>Flatmates Scheduler</b> — Flutter app and Express 5 / MySQL API on Railway for booking shared spaces
             across multiple house profiles.</p>
+          </div>
         </article>
       </div>
     </section>
