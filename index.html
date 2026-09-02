@@ -68,6 +68,9 @@
     --ember:    #9F441A;
     --shade:    rgba(0, 0, 0, .06);
     --frame:    rgba(0, 0, 0, .10);
+
+    /* One top gap for both columns, so the rail and the eyebrow start level. */
+    --top-gap:  clamp(26px, 3.4vw, 44px);
   }
 
   /* ============================== base ============================== */
@@ -129,9 +132,9 @@
       display: block;
       grid-column: 1;
       position: sticky;
-      top: 46px;
+      top: 34px;
       align-self: start;
-      padding-top: 6px;
+      padding-top: calc(var(--top-gap) + 3px);
     }
     .rail ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
     .rail a {
@@ -189,7 +192,7 @@
   }
 
   /* ============================== hero ============================== */
-  header.hero { padding: clamp(44px, 8vw, 96px) 0 0; }
+  header.hero { padding: var(--top-gap) 0 0; }
   .hero .eyebrow { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 22px; }
   .hero .eyebrow .sep { color: var(--rule-2); }
   .hero .eyebrow .dim { color: var(--muted); }
@@ -522,7 +525,6 @@
   <nav class="rail" aria-label="Sections">
     <ol>
       <li><a href="#featured">Featured</a></li>
-      <li><a href="#current">Current</a></li>
       <li><a href="#now">Arincare</a></li>
       <li><a href="#decade">The decade</a></li>
       <li><a href="#products">Products</a></li>
@@ -614,41 +616,11 @@
       </div>
     </section>
 
-    <!-- ==================== CURRENT ==================== -->
-    <section id="current">
-      <div class="sec-head" data-reveal>
-        <h2>Current roles</h2>
-        <div class="when">Oct 2024 → present</div>
-      </div>
-
-      <div class="roles-now" data-reveal>
-        <article class="rnow">
-          <div class="when">Oct 2024 → present</div>
-          <div>
-            <h3>PRINTCODE Company Limited</h3>
-            <div class="role-title">Senior Software Engineer · full-time, remote</div>
-            <p>Lead full-stack delivery of web and mobile products end to end. Built a drama video-streaming
-              platform — Angular front end, Node.js backend tuned for streaming throughput, and a cross-platform
-              Flutter app with native video playback and ad insertion.</p>
-          </div>
-        </article>
-        <article class="rnow">
-          <div class="when">Oct 2024 → present</div>
-          <div>
-            <h3>Arincare Co., Ltd.</h3>
-            <div class="role-title">Senior Software Engineer · part-time, remote</div>
-            <p>Core developer on Arincare Telepharmacy and the AI assistant layer on top of it. The case study
-              below covers it in detail.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <!-- ==================== NOW ==================== -->
     <section id="now">
       <div class="sec-head" data-reveal>
         <h2>Case study — Arincare Telepharmacy &amp; AI</h2>
-        <div class="when">Oct 2024 → present · 6,000+ pharmacies</div>
+        <div class="when">Oct 2024 → present · Senior Software Engineer · 6,000+ pharmacies</div>
       </div>
 
       <p class="lede" data-reveal>
