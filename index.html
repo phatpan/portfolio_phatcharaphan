@@ -5,12 +5,42 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Phatcharaphan Ananpreechakun — senior full-stack engineer, 14+ years across Thai banking, capital markets, telecom and a Thai FDA-approved telepharmacy platform.">
 <style>*,*::before,*::after{box-sizing:border-box}body{margin:0}</style>
-<title>Phatcharaphan Ananpreechakun</title>
+<title>Phatcharaphan Ananpreechakun | Senior Full-Stack Software Engineer</title>
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#1A8917">
+<link rel="canonical" href="https://www.phatcha.com/">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://www.phatcha.com/">
+<meta property="og:title" content="Phatcharaphan Ananpreechakun | Senior Full-Stack Software Engineer">
+<meta property="og:description" content="15+ years building Java/Spring Boot, React and mobile systems for Thai banking, capital markets and telecom — and a Thai FDA-approved telepharmacy platform. U.S. permanent resident, no sponsorship required.">
+<meta property="og:image" content="https://www.phatcha.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phatcharaphan Ananpreechakun | Senior Full-Stack Software Engineer">
+<meta name="twitter:description" content="15+ years across Thai banking, capital markets and telecom — and a Thai FDA-approved telepharmacy platform.">
+<meta name="twitter:image" content="https://www.phatcha.com/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Phatcharaphan Ananpreechakun",
+  "jobTitle": "Senior Full-Stack Software Engineer",
+  "url": "https://www.phatcha.com/",
+  "email": "mailto:phat.pan@gmail.com",
+  "address": { "@type": "PostalAddress", "addressRegion": "Rhode Island", "addressCountry": "US" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Maejo University" },
+  "sameAs": [
+    "https://github.com/phatpan",
+    "https://www.linkedin.com/in/phatcharaphan-a-570967a3",
+    "https://medium.com/@phatpan"
+  ],
+  "knowsAbout": ["Java", "Spring Boot", "Kafka", "React", "TypeScript", "Node.js", "AWS", "Kotlin", "Swift", "PostgreSQL", "Microservices"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter+Tight:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
@@ -367,6 +397,52 @@
   .strip .frame img { height: 100%; object-fit: cover; object-position: top center; }
   .strip figcaption { font-size: 13px; }
 
+  /* ============================== featured ============================== */
+  .featured { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; border-top: 1px solid var(--ink); }
+  @media (min-width: 860px) { .featured { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .fcard { padding: 22px 26px 24px 0; border-bottom: 1px solid var(--rule); }
+  @media (min-width: 860px) {
+    .fcard { border-bottom: 0; border-right: 1px solid var(--rule); }
+    .fcard:last-child { border-right: 0; }
+    .fcard + .fcard { padding-left: 26px; }
+  }
+  .fcard .metric {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 26px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1;
+    color: var(--green); font-variant-numeric: tabular-nums;
+  }
+  .fcard h3 { font-size: 18.5px; font-weight: 600; margin: 8px 0 6px; letter-spacing: -.012em; }
+  .fcard .tech {
+    font-family: "DM Mono", ui-monospace, monospace;
+    font-size: 12.5px; line-height: 1.65; color: var(--muted);
+  }
+  .fcard a { color: inherit; text-decoration: none; }
+  .fcard a:hover h3 { color: var(--green); }
+
+  /* current roles */
+  .roles-now { border-top: 1px solid var(--ink); }
+  .rnow {
+    display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px 30px;
+    padding: 20px 0; border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 760px) { .rnow { grid-template-columns: 190px minmax(0, 1fr); } }
+  .rnow > * { min-width: 0; }
+  .rnow .when {
+    font-family: "DM Mono", ui-monospace, monospace;
+    font-size: 12.5px; color: var(--muted); padding-top: 5px;
+  }
+  .rnow h3 { font-size: 19px; font-weight: 600; letter-spacing: -.012em; }
+  .rnow .role-title { font-size: 16px; color: var(--muted); margin: 3px 0 8px; }
+  .rnow p { margin: 0; color: var(--ink-2); font-size: 18px; }
+
+  .award {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 16px 18px; margin-top: 22px;
+    background: var(--surface); border: 1px solid var(--rule); border-left: 2px solid var(--green);
+    font-size: 17px; color: var(--ink-2);
+  }
+  .award b { color: var(--ink); font-weight: 600; }
+
   /* ============================== writing ============================== */
   .posts { border-top: 1px solid var(--ink); }
   .post {
@@ -445,15 +521,18 @@
 
   <nav class="rail" aria-label="Sections">
     <ol>
-      <li><a href="#now">Now</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#current">Current</a></li>
+      <li><a href="#now">Arincare</a></li>
       <li><a href="#decade">The decade</a></li>
       <li><a href="#products">Products</a></li>
+      <li><a href="#community">Speaking</a></li>
       <li><a href="#writing">Writing</a></li>
-      <li><a href="#archive">Archive</a></li>
       <li><a href="#stack">Stack</a></li>
+      <li><a href="#archive">Archive</a></li>
       <li><a href="#contact">Contact</a></li>
     </ol>
-    <div class="meta">Rhode Island<br>UTC−5<br>EN / TH</div>
+    <div class="meta">Rhode Island<br>Eastern Time<br>EN / TH</div>
   </nav>
 
   <div class="col">
@@ -461,9 +540,9 @@
     <!-- ==================== HERO ==================== -->
     <header class="hero">
       <div class="eyebrow label" data-reveal style="--d:.05s">
-        <span>Senior Software Engineer</span>
+        <span>Senior Full-Stack Software Engineer</span>
         <span class="sep">/</span>
-        <span class="dim">14+ years</span>
+        <span class="dim">15+ years</span>
         <span class="sep">/</span>
         <span class="dim">Rhode Island, USA</span>
       </div>
@@ -471,7 +550,7 @@
       <h1 data-reveal style="--d:.12s">Phatcharaphan Ananpreechakun</h1>
 
       <div class="thesis" data-reveal style="--d:.2s">
-        <p>Senior Full-Stack Engineer with <b>14+ years</b> building secure, scalable platforms for enterprise banking
+        <p>Senior Full-Stack Engineer with <b>15+ years</b> building secure, scalable platforms for enterprise banking
           and finance across web, mobile, and cloud. Core stack: Java/Spring Boot, Node.js, React, Angular, and Kotlin,
           with deep experience in microservices, RESTful APIs, and distributed systems. Delivered mission-critical
           applications for leading financial institutions, including <b>TMBThanachart (TTB)</b>, <b>Krungsri</b>,
@@ -483,8 +562,8 @@
 
       <div class="visa" data-reveal style="--d:.26s">
         <span class="mono" style="color:var(--green)" aria-hidden="true">◆</span>
-        <span><b>U.S. permanent resident and military spouse.</b> Authorized to work in the U.S. with no
-        sponsorship required — open to on-site or remote.</span>
+        <span><b>U.S. Permanent Resident · No sponsorship required.</b> Open to on-site or remote roles
+        anywhere in the U.S.</span>
       </div>
 
       <div class="links" data-reveal style="--d:.32s">
@@ -495,19 +574,81 @@
       </div>
 
       <div class="stats" data-reveal style="--d:.38s">
-        <div class="stat"><b>14+</b><span>Years shipping production software</span></div>
-        <div class="stat"><b>5.5M+</b><span>Users on the bank app I built personalization for</span></div>
-        <div class="stat"><b>4</b><span>Thai banks &amp; the national stock exchange</span></div>
-        <div class="stat"><b>6,000+</b><span>Pharmacies on the platform I ship into today</span></div>
+        <div class="stat"><b>15+</b><span>Years shipping production software</span></div>
+        <div class="stat"><b>5.5M+</b><span>Users on the banking app I built personalization for</span></div>
+        <div class="stat"><b>6,000+</b><span>Pharmacies on the Arincare platform</span></div>
+        <div class="stat"><b>&lt;500ms</b><span>API response, down from 10s+ &mdash; ttb personalization</span></div>
       </div>
     </header>
 
 
+    <!-- ==================== FEATURED ==================== -->
+    <section id="featured">
+      <div class="sec-head" data-reveal>
+        <h2>Featured engineering work</h2>
+        <div class="when">The short version</div>
+      </div>
+
+      <div class="featured" data-reveal>
+        <div class="fcard">
+          <a href="#decade">
+            <div class="metric">5.5M+ users</div>
+            <h3>ttb touch personalization platform</h3>
+            <div class="tech">Java · Spring Boot · Kafka · Spring Batch<br>React · MongoDB · Redis · Swift · Kotlin</div>
+          </a>
+        </div>
+        <div class="fcard">
+          <a href="#now">
+            <div class="metric">6,000+ pharmacies</div>
+            <h3>Arincare Telepharmacy &amp; AI</h3>
+            <div class="tech">Laravel · Vue 3 · Reverb · LINE LIFF<br>Vertex AI · n8n · Dagster · MySQL</div>
+          </a>
+        </div>
+        <div class="fcard">
+          <a href="#products">
+            <div class="metric">Production SaaS</div>
+            <h3>JuztBooking</h3>
+            <div class="tech">Node · TypeScript · Next.js<br>Flutter · Stripe Connect · PostgreSQL</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CURRENT ==================== -->
+    <section id="current">
+      <div class="sec-head" data-reveal>
+        <h2>Current roles</h2>
+        <div class="when">Oct 2024 → present</div>
+      </div>
+
+      <div class="roles-now" data-reveal>
+        <article class="rnow">
+          <div class="when">Oct 2024 → present</div>
+          <div>
+            <h3>PRINTCODE Company Limited</h3>
+            <div class="role-title">Senior Software Engineer · full-time, remote</div>
+            <p>Lead full-stack delivery of web and mobile products end to end. Built a drama video-streaming
+              platform — Angular front end, Node.js backend tuned for streaming throughput, and a cross-platform
+              Flutter app with native video playback and ad insertion.</p>
+          </div>
+        </article>
+        <article class="rnow">
+          <div class="when">Oct 2024 → present</div>
+          <div>
+            <h3>Arincare Co., Ltd.</h3>
+            <div class="role-title">Senior Software Engineer · part-time, remote</div>
+            <p>Core developer on Arincare Telepharmacy and the AI assistant layer on top of it. The case study
+              below covers it in detail.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- ==================== NOW ==================== -->
     <section id="now">
       <div class="sec-head" data-reveal>
-        <h2>Now — Arincare</h2>
-        <div class="when">Oct 2024 → present · Senior Software Engineer</div>
+        <h2>Case study — Arincare Telepharmacy &amp; AI</h2>
+        <div class="when">Oct 2024 → present · 6,000+ pharmacies</div>
       </div>
 
       <p class="lede" data-reveal>
@@ -584,7 +725,8 @@
           <li><b>Product recommendation</b> from market-basket analysis (mlxtend), with Redis caching and scheduled
             batch jobs so the shop-front never waits on the model.</li>
           <li>A <b>Dagster pipeline</b> for product scoring, plus payment and search optimization.</li>
-          <li>Ongoing performance and scalability work: database optimization, caching strategy, and API architecture.</li>
+          <li><b>Cut platform latency by roughly 30%</b> through database query optimization and a caching strategy,
+            alongside ongoing API architecture work.</li>
         </ul>
       </div>
     </section>
@@ -604,6 +746,12 @@
       <div class="block" data-reveal>
         <h3>TMBThanachart Bank — <span style="font-weight:600">ttb touch</span>, the bank's flagship retail app</h3>
         <div class="kicker">5.5M+ users · Java Spring Boot · Kafka · React · Swift · Kotlin</div>
+        <div class="award" style="margin-top:0;margin-bottom:18px">
+          <span class="mono" style="color:var(--green)" aria-hidden="true">◆</span>
+          <span><b>10s+ &rarr; under 500ms.</b> The personalization query path was taking more than ten seconds.
+          It was a JPA fetch-strategy problem — the entity graph was pulling far more than the endpoint needed,
+          in far too many round trips. Reworking the fetch plan and the queries brought it under half a second.</span>
+        </div>
         <ul class="dash">
           <li>Designed and built a <b>personalization card engine</b> — a set of Java Spring Boot microservices surfacing
             contextual, targeted cards to <b>5.5M+ users</b> based on in-app behaviour, transaction patterns and campaigns.</li>
@@ -707,6 +855,16 @@
             transformation, behind an AngularJS front end.</li>
         </ul>
       </div>
+      <div class="block" data-reveal>
+        <h3>TPH Global — payroll platform</h3>
+        <div class="kicker">Oct 2023 – Apr 2024 · Melbourne · React · TypeScript · Node · AWS</div>
+        <ul class="dash">
+          <li>Led development of a payroll platform in React/TypeScript and Node, with REST integrations,
+            real-time synchronisation, and unit and integration tests.</li>
+          <li>Ran the cloud workloads on <b>AWS</b> — EC2, RDS PostgreSQL, CodePipeline and CloudWatch — which made
+            releases repeatable and gave the team actual production visibility.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- ==================== PRODUCTS ==================== -->
@@ -717,8 +875,8 @@
       </div>
       <p class="lede" data-reveal>
         Outside the enterprise work I build whole products alone — schema, API, web, mobile, and the deploy path.
-        Four are live on the web and two are published in the App Store and Google Play. The screenshots are
-        these products as they ship today.
+        Two are shown in full below; the rest are listed with their live or store links. Everything here is in
+        production right now.
       </p>
 
       <div class="products">
@@ -746,66 +904,49 @@
             own non-technical team.</p>
         </article>
 
-        <article class="product" data-reveal style="--d:.08s">
-          <figure class="figure">
-            <div class="frame"><img src="assets/nitithainy.jpg" alt="The Niti Thai restaurant site: a deep red hero reading Authentic Thai taste from our kitchen to your hands, beside a photograph of Thai dishes." loading="lazy" decoding="async"></div>
-          </figure>
-          <h3>Niti Thai</h3>
-          <a class="site" href="https://www.nitithainy.com">nitithainy.com&nbsp;↗</a>
-          <p>Restaurant site with online pickup ordering for a client in Glenville, New York. I built five complete
-            design directions, put them in front of the owner, and shipped the one they chose — the other four stay
-            archived in the repo behind a Next.js rewrite, so changing their mind costs nothing.</p>
-        </article>
-
         <article class="product" data-reveal>
-          <figure class="figure">
-            <div class="frame"><img src="assets/shabyar.jpg" alt="The Shabyar site: a dark hero reading Make the Next Move over a photograph of a couple, with download buttons and three feature columns." loading="lazy" decoding="async"></div>
-          </figure>
-          <h3>Shabyar</h3>
-          <a class="site" href="https://shabyar.com">shabyar.com&nbsp;↗</a>
-          <p>Dating app with a Flutter client, an Express API, a React back-office and a Next.js site. The parts that
-            actually decide whether a consumer app survives: app-lifecycle handling so presence and notifications behave
-            across backgrounding, layered rate limiting, Firebase Cloud Messaging, moderation tooling, and a
-            location-aware discovery model.</p>
-        </article>
-
-        <article class="product" data-reveal>
-          <figure class="figure">
-            <div class="frame"><img src="assets/minchap.jpg" alt="Three MinChap phone screens: the dark app home with Thai drama posters, a full-screen video player, and an episode list." loading="lazy" decoding="async"></div>
-          </figure>
-          <h3>MinChap</h3>
-          <div class="stores">
+          <h3 style="margin-top:4px">More shipped products</h3>
+          <p style="margin-top:12px"><b>MinChap</b> — short-drama streaming for the Thai market, on both stores.
+            Flutter client, Node API on Knex, operator back-office; coins, in-app purchases and episode unlocking.
             <a class="site" href="https://play.google.com/store/apps/details?id=com.minchap.love.minchap_mobile">Google Play&nbsp;↗</a>
-            <a class="site" href="https://apps.apple.com/app/id6736961012">App Store&nbsp;↗</a>
-          </div>
-          <p>A short-drama streaming app for the Thai market, shipped on both stores. Flutter client, Node API on Knex
-            migrations, and an operator back-office — around 1,150 commits across the three. The commercial model is
-            coins: tiered credit bundles, in-app purchases, and episode unlocking, with a scheduler service running
-            the recurring jobs behind it.</p>
-        </article>
-
-        <article class="product" data-reveal style="--d:.08s">
-          <figure class="figure">
-            <div class="frame"><img src="assets/agripro.jpg" alt="Three AgriPro Farmer phone screens: drawing a planting plot on a satellite map with automatic area calculation, a weather report, and temperature and humidity charts." loading="lazy" decoding="async"></div>
-          </figure>
-          <h3>AgriPro Farmer</h3>
-          <div class="stores">
+            <a class="site" href="https://apps.apple.com/app/id6736961012">App Store&nbsp;↗</a></p>
+          <p><b>AgriPro Farmer</b> — smart-farm app on both stores. Farmers draw a plot on a satellite map, the app
+            computes its area, then tracks planting cycles, weather from the Thai Meteorological Department, and IoT
+            soil and climate sensors.
             <a class="site" href="https://play.google.com/store/apps/details?id=com.doublem.agriproiot">Google Play&nbsp;↗</a>
-            <a class="site" href="https://apps.apple.com/us/app/agriprofarmer/id1547206844">App Store&nbsp;↗</a>
-          </div>
-          <p>A smart-farm app for Thai growers, on both stores. Farmers draw a plot on a satellite map and the app
-            computes its area, then tracks planting cycles, pulls weather from the Thai Meteorological Department,
-            and reads IoT sensors — soil moisture, temperature, humidity — charting them against yield. Flutter
-            client and API, migrated off a legacy codebase and tuned for slow rural connections.</p>
+            <a class="site" href="https://apps.apple.com/us/app/agriprofarmer/id1547206844">App Store&nbsp;↗</a></p>
+          <p><b>Shabyar</b> — dating app; Flutter client, Express API, React back-office, Next.js site. App-lifecycle
+            handling, layered rate limiting, FCM, moderation tooling.
+            <a class="site" href="https://shabyar.com">shabyar.com&nbsp;↗</a></p>
+          <p><b>Niti Thai</b> — restaurant site with online pickup ordering for a client in Glenville, New York. Five
+            design directions built, the chosen one shipped.
+            <a class="site" href="https://www.nitithainy.com">nitithainy.com&nbsp;↗</a></p>
+          <p><b>Digimove logistics suite</b> — production and logistics dashboards for B.Grimm and Sanko, plus
+            register, request, shipment and tracking apps.</p>
+          <p><b>Flatmates Scheduler</b> — Flutter app and Express 5 / MySQL API on Railway for booking shared spaces
+            across multiple house profiles.</p>
         </article>
+      </div>
+    </section>
 
-        <article class="product" data-reveal>
-          <h3 style="margin-top:4px">Also built and shipped</h3>
-          <p style="margin-top:10px"><b>Flatmates Scheduler</b> — Flutter app and Express 5 / MySQL API on Railway for
-            booking shared spaces across multiple house profiles.</p>
-          <p><b>Digimove logistics suite</b> — production and logistics dashboards for B.Grimm and Sanko, plus register,
-            request, shipment and tracking apps.</p>
-        </article>
+    <!-- ==================== TEACHING ==================== -->
+    <section id="community">
+      <div class="sec-head" data-reveal>
+        <h2>Speaking &amp; teaching</h2>
+        <div class="when">Community</div>
+      </div>
+      <div class="block" data-reveal>
+        <ul class="dash">
+          <li>Speaker at <b>Angular Bangkok</b>, <b>ReactiveX Bangkok</b>, and <b>Women Techmakers</b> events.</li>
+          <li>Ran workshops on <b>Angular, Test-Driven Development and Robot Framework</b> at universities and in tech
+            communities — including Maejo University, Mahanakorn University of Technology, and in-house at Food Passion.</li>
+        </ul>
+        <div class="award">
+          <span class="mono" style="color:var(--green)" aria-hidden="true">◆</span>
+          <span><b>Best Performing Startup Award, DTAC Accelerate</b> — for the Somjai home-loan platform, a one-stop
+          mortgage service for property developers. I built the Angular front end, the PHP/Laravel backend, and the
+          CI/CD pipeline on AWS CodePipeline.</span>
+        </div>
       </div>
     </section>
 
@@ -894,6 +1035,51 @@
       </div>
     </section>
 
+    <!-- ==================== STACK ==================== -->
+    <section id="stack">
+      <div class="sec-head" data-reveal>
+        <h2>Stack</h2>
+        <div class="when">Shipped to production, not evaluated</div>
+      </div>
+      <div class="core-stack" data-reveal style="margin-bottom:30px">
+        <div class="label" style="margin-bottom:10px">Core stack</div>
+        <p style="font-size:20px;line-height:1.6;color:var(--ink);margin:0">
+          <b>Java · Spring Boot · React · TypeScript · Node.js · AWS · PostgreSQL</b>
+        </p>
+        <p style="font-size:17px;color:var(--muted);margin:10px 0 0">
+          This is what I reach for first and what most of the last decade was written in. Everything below it is
+          also production experience, not a reading list.
+        </p>
+      </div>
+      <div class="label" style="margin-bottom:12px" data-reveal>Additional production experience</div>
+      <div class="table-wrap" data-reveal>
+        <table class="stack">
+          <tbody>
+            <tr><th scope="row">Languages</th>
+              <td>Java · Kotlin · TypeScript · JavaScript · Swift · Go · Python · PHP · Dart · SQL <span style="color:var(--muted)">(legacy: Visual Basic, JSP, ASP)</span></td></tr>
+            <tr><th scope="row">Mobile</th>
+              <td>Android (Kotlin, Java, MVVM, Koin, Coroutines, Espresso) · iOS (Swift, UIKit, XCTest) · Flutter · React Native · Fastlane</td></tr>
+            <tr><th scope="row">Web</th>
+              <td>React · Next.js · Redux Toolkit · Vue 3 · Pinia · Angular &amp; AngularJS · RxJS · TanStack Query · Vite · Tailwind · Storybook</td></tr>
+            <tr><th scope="row">Backend</th>
+              <td>Spring Boot (Java/Kotlin) · Laravel · NestJS · Node &amp; Express · Go (Echo, go-json-rest) · REST &amp; HATEOAS · SOAP · gRPC · OAuth2/JWT · Kafka · JMS (ActiveMQ/Artemis) · WebSockets (Reverb, Socket.IO, Pusher)</td></tr>
+            <tr><th scope="row">AI &amp; ML</th>
+              <td>Vertex AI (Discovery, Generative) · prompt engineering · n8n orchestration · Dagster pipelines · market-basket analysis (mlxtend)</td></tr>
+            <tr><th scope="row">Data</th>
+              <td>PostgreSQL · MySQL / MariaDB · Oracle · SQL Server · MongoDB · DynamoDB · Redis · Supabase · Realm</td></tr>
+            <tr><th scope="row">Cloud &amp; infra</th>
+              <td>AWS (Lambda, DynamoDB, Batch, Secrets Manager, API Gateway, EC2) · Google Cloud · Huawei Cloud · Docker &amp; Compose · Kubernetes · Terraform · Caddy · Nginx · Vercel · Railway</td></tr>
+            <tr><th scope="row">CI/CD &amp; quality</th>
+              <td>Jenkins · GitLab CI · GoCD · GitHub Actions · SonarQube · JaCoCo · ktlint · OWASP Dependency Check · MobSF · Crashlytics</td></tr>
+            <tr><th scope="row">Testing</th>
+              <td>TDD · Robot Framework · Appium · Selenium · JUnit 5 · TestNG · Mockito · MockK · Espresso · XCTest · React Testing Library · Vitest · Jest · pytest</td></tr>
+            <tr><th scope="row">Payments</th>
+              <td>Stripe (Subscriptions, Connect, application fees) · Mollie · Thai QR · Alipay · WeChat Pay</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     <!-- ==================== ARCHIVE ==================== -->
     <section id="archive">
       <div class="sec-head" data-reveal>
@@ -931,55 +1117,6 @@
       </div>
     </section>
 
-    <!-- ==================== TEACHING ==================== -->
-    <section id="community">
-      <div class="sec-head" data-reveal>
-        <h2>Speaking &amp; teaching</h2>
-        <div class="when">Community</div>
-      </div>
-      <div class="block" data-reveal>
-        <ul class="dash">
-          <li>Speaker at <b>Angular Bangkok</b>, <b>ReactiveX Bangkok</b>, and <b>Women Techmakers</b> events.</li>
-          <li>Ran workshops on <b>Angular, Test-Driven Development and Robot Framework</b> at universities and in tech
-            communities — including Maejo University, Mahanakorn University of Technology, and in-house at Food Passion.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ==================== STACK ==================== -->
-    <section id="stack">
-      <div class="sec-head" data-reveal>
-        <h2>Stack</h2>
-        <div class="when">Shipped to production, not evaluated</div>
-      </div>
-      <div class="table-wrap" data-reveal>
-        <table class="stack">
-          <tbody>
-            <tr><th scope="row">Languages</th>
-              <td>Java · Kotlin · TypeScript · JavaScript · Swift · Go · Python · PHP · Dart · SQL <span style="color:var(--muted)">(legacy: Visual Basic, JSP, ASP)</span></td></tr>
-            <tr><th scope="row">Mobile</th>
-              <td>Android (Kotlin, Java, MVVM, Koin, Coroutines, Espresso) · iOS (Swift, UIKit, XCTest) · Flutter · React Native · Fastlane</td></tr>
-            <tr><th scope="row">Web</th>
-              <td>React · Next.js · Redux Toolkit · Vue 3 · Pinia · Angular &amp; AngularJS · RxJS · TanStack Query · Vite · Tailwind · Storybook</td></tr>
-            <tr><th scope="row">Backend</th>
-              <td>Spring Boot (Java/Kotlin) · Laravel · NestJS · Node &amp; Express · Go (Echo, go-json-rest) · REST &amp; HATEOAS · SOAP · gRPC · OAuth2/JWT · Kafka · JMS (ActiveMQ/Artemis) · WebSockets (Reverb, Socket.IO, Pusher)</td></tr>
-            <tr><th scope="row">AI &amp; ML</th>
-              <td>Vertex AI (Discovery, Generative) · prompt engineering · n8n orchestration · Dagster pipelines · market-basket analysis (mlxtend)</td></tr>
-            <tr><th scope="row">Data</th>
-              <td>PostgreSQL · MySQL / MariaDB · Oracle · SQL Server · MongoDB · DynamoDB · Redis · Supabase · Realm</td></tr>
-            <tr><th scope="row">Cloud &amp; infra</th>
-              <td>AWS (Lambda, DynamoDB, Batch, Secrets Manager, API Gateway, EC2) · Google Cloud · Huawei Cloud · Docker &amp; Compose · Kubernetes · Terraform · Caddy · Nginx · Vercel · Railway</td></tr>
-            <tr><th scope="row">CI/CD &amp; quality</th>
-              <td>Jenkins · GitLab CI · GoCD · GitHub Actions · SonarQube · JaCoCo · ktlint · OWASP Dependency Check · MobSF · Crashlytics</td></tr>
-            <tr><th scope="row">Testing</th>
-              <td>TDD · Robot Framework · Appium · Selenium · JUnit 5 · TestNG · Mockito · MockK · Espresso · XCTest · React Testing Library · Vitest · Jest · pytest</td></tr>
-            <tr><th scope="row">Payments</th>
-              <td>Stripe (Subscriptions, Connect, application fees) · Mollie · Thai QR · Alipay · WeChat Pay</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
     <!-- ==================== EDUCATION ==================== -->
     <section id="education">
       <div class="sec-head" data-reveal>
@@ -987,17 +1124,17 @@
       </div>
       <div class="roles" data-reveal>
         <article class="role">
-          <div class="years">2022 — 2024</div>
-          <div>
-            <h3>Greystone College, Melbourne</h3>
-            <div class="who">Certificate III in Business · Australia</div>
-          </div>
-        </article>
-        <article class="role">
           <div class="years">2007 — 2011</div>
           <div>
             <h3>Maejo University, Chiang Mai</h3>
             <div class="who">Bachelor of Science, Computer Science · Thailand</div>
+          </div>
+        </article>
+        <article class="role">
+          <div class="years">2022 — 2024</div>
+          <div>
+            <h3>Greystone College, Melbourne</h3>
+            <div class="who">Certificate III in Business · Australia</div>
           </div>
         </article>
       </div>

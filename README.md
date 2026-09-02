@@ -12,7 +12,8 @@ A single static page. No build step is needed to serve it — `index.html` and
 | Path | What it is |
 |---|---|
 | `index.html` | The site. Self-contained apart from `assets/` and Google Fonts. |
-| `assets/` | Images (JPEG) and two screen recordings (H.264 MP4), ~2.1 MB total. |
+| `assets/` | Images (JPEG) and two screen recordings (H.264 MP4). |
+| `favicon.*`, `icon-*.png`, `og-image.jpg`, `site.webmanifest` | Site icon set and the Open Graph share card. |
 | `src/portfolio.src.html` | Source of truth for content and design. Same markup as `index.html`, but with `{{IMG:slug}}` / `{{VID:slug}}` placeholders. |
 | `src/build.py` | Generates `index.html`. `--external <dir>` writes the file-based build used here; with no arguments it inlines everything as `data:` URIs for hosts with a strict CSP. |
 | `archive/2025-react/` | The previous version of this site (React over CDN, 2025). Kept for reference, not served. |
@@ -26,8 +27,10 @@ and rebuilt.
 
 ## Publishing
 
-GitHub Pages, from `main` / root. `.nojekyll` is present so Pages serves the
-files as-is.
+**Production: Vercel — https://www.phatcha.com** (auto-deploys from `main`).
+
+GitHub Pages is kept as an alternate deployment from `main` / root;
+`.nojekyll` is present so Pages serves the files as-is.
 
 ## Notes
 
